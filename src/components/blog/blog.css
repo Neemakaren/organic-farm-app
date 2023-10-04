@@ -1,0 +1,38 @@
+.stacked {
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.blog-content {
+    z-index: 10;
+    background-color: white;
+    align-self: end;
+    /* margin: .5rem .5rem 2rem; */
+    margin: .5rem .2rem 2rem;
+    padding: 0.5rem;
+    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+}
+
+
+.blog-con {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2em;
+    max-width: 1120px;
+    margin: 50px auto;
+}
+
+.blog-cards {
+    /* border: 2px solid hotpink; */
+    aspect-ratio: 1 / 1.2;
+}
+
+.blog-img {
+    width: 100%;
+    object-fit: cover;
+}

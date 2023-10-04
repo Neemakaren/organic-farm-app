@@ -1,0 +1,84 @@
+.best1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(249, 235, 179);
+    padding: 20px;
+   
+}
+
+.best1 span{
+    font-weight: 900;
+    font-size: 1.2em;
+    color: black;
+    
+}
+
+.best1-p {
+    color: gray;
+    font-size: 1.2em;
+}
+
+.best-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    max-width: 1120px;
+    margin: 50px auto;
+    gap: 2em;
+}
+
+
+.best-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.best-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+
+.best-img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.best-head {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-bottom: 5px;
+
+}
+
+.best-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+
+.best-btn {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(252,219,90);
+}
+
+.best-btn:hover {
+    background-color: rgb(252,219,90);
+    color: black;
+}
+
+.best-icon {
+    margin-right: 5px;
+    font-size: 1.5em;
+}

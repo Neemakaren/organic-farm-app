@@ -1,0 +1,71 @@
+.feat-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.featured-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    max-width: 1120px;
+    margin: 50px auto;
+    gap: 2em;
+}
+
+.featured-cards {
+    border: 2px solid rgb(239, 227, 227);
+}
+
+.featured-cards:hover {
+    box-shadow: 0 5px 15px rgba(141, 139, 139, 0.6);
+    transition: all .3s ease-in-out;
+}
+
+.feat-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.feat-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.feat-head {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-bottom: 5px;
+
+}
+
+.feat-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+
+.feat-btn {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(252,219,90);
+}
+
+.feat-btn:hover {
+    background-color: rgb(252,219,90);
+    color: black;
+}
+
+.feat-icon {
+    margin-right: 5px;
+    font-size: 1.5em;
+}

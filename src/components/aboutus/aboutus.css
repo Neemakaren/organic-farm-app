@@ -1,0 +1,50 @@
+.about-con {
+    max-width: 1120px;
+    background-image: url('../../assets/agro.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 50px auto;
+}
+
+.con-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.about-content {
+    margin: 50px auto;
+}
+
+.about-head {
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.about-img {
+    width: 20em;
+    margin: auto;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about-p {
+    padding: 10px;
+}
+
+@media all and  (max-width: 768px) {
+    .about-con {
+        background-image: none;
+        background-color: rgb(252,219,90);
+    }
+    .about-img {
+        display: none;
+
+    }
+}

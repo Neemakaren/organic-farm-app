@@ -1,0 +1,34 @@
+.mini-content {
+    display: flex;
+    /* padding: 10px; */
+    /* margin-right: 10em; */
+    color: gray;
+    font-size: 15px;
+}
+
+.main {
+    padding-right: 1.2em;
+}
+
+.main2 {
+    padding-right: 1.2em;
+}
+
+
+.socials {
+    padding: 0 25px;
+}
+
+.socials > * {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+
+
+@media all and  (max-width: 1200px) {
+    .mini-content {
+        display: none;
+        color: red;
+    }
+}
