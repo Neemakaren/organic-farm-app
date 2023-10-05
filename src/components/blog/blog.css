@@ -7,6 +7,29 @@
     grid-row: 1 / 2;
 }
 
+.blog-head {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-head-h2 {
+    font-size: 2em;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.blog-head-h2 span {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.blog-head-p {
+    color: #928e87;
+    font-size: 1.2em;
+}
+
 .blog-content {
     z-index: 10;
     background-color: white;
@@ -21,7 +44,7 @@
 .blog-con {
     /* border: 2px solid green; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
     gap: 2em;
     max-width: 1120px;
     margin: 50px auto;
@@ -35,4 +58,10 @@
 .blog-img {
     width: 100%;
     object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+
+.blog-img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
 }

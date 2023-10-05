@@ -7,19 +7,23 @@ import Featured from '../components/featured/Featured'
 import AboutUs from '../components/aboutus/AboutUs'
 import Best from '../components/best/Best'
 import Blog from '../components/blog/Blog'
+import Brands from '../components/brands/Brands'
+import Footer from '../components/footer/Footer'
 
 
 const Home = () => {
   return (
     <>
-        {/* <Navbar /> */}
-        {/* <Hero /> */}
+        <Navbar />
+        <Hero />
         {/* <Banner /> */}
-        {/* <Services /> */}
-        {/* <AboutUs /> */}
-        {/* <Featured /> */}
-        {/* <Best /> */}
+        <Services />
+        <AboutUs />
+        <Featured />
+        <Best />
         <Blog />
+        <Brands />
+        <Footer />
     </>
   )
 }

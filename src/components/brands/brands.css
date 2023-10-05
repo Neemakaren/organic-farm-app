@@ -1,0 +1,14 @@
+.brands-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+}
+
+.brands-image {
+    /* border: 2px solid green; */
+}
+
+.brands-img {
+    padding-right: 2em;
+}

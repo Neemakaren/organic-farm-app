@@ -6,6 +6,12 @@ import img2 from '../../assets/blog-3.jpg'
 
 const Blog = () => {
   return (
+    <>
+    <div className="blog-head">
+    <h2 className='blog-head-h2'> <span>Blog</span> Posts</h2>
+    <p className='blog-head-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eum.</p>
+
+    </div>
     <div className='blog-con'>
         <div className="blog-cards stacked">
         <img src={img} alt="" className='blog-img' />
@@ -40,6 +46,8 @@ const Blog = () => {
 
         </div>
     </div>
+    </>
+
   )
 }
 

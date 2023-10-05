@@ -23,12 +23,12 @@ const Navbar = () => {
         </p>
     </div>
         <div className='list'>
-          <ul>
-            <li>Home</li>
-            <li>Pages</li>
-            <li>shop</li>
-            <li>blog</li>
-            <li>Contact</li>
+          <ul className='list-main'>
+            <li className='list1' >Home</li>
+            <li className='list1'>Pages</li>
+            <li className='list1'>shop</li>
+            <li className='list1'>blog</li>
+            <li className='list1'>Contact</li>
           </ul>
           <div className="fonts">
           <p className='fon1'>cu</p>

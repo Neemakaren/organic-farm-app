@@ -2,6 +2,7 @@ import React from 'react'
 import './best.css'
 import img from '../../assets/feat-1.jpg'
 import { HiOutlineShoppingBag} from 'react-icons/hi'
+import { products } from '../../products'
 
 const Best = () => {
   return (
@@ -11,53 +12,21 @@ const Best = () => {
         <p className='best1-p'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div className='best-con'>
-      <div className="best-cards">
-        <img src={img} alt="" className='best-img' />
+      {
+        products.map((product) => (
+          <div className="best-cards">
+        <img src={product.image} alt="" className='best-img' />
         <div className="best-content">
-          <h4 className='best-head'>Green Cabbage</h4>
-          <p>vegetable</p>
-          <span className='best-price'>$ 4.32</span>
+          <h4 className='best-head'>{product.title}</h4>
+          <p>{product.category}</p>
+          <span className='best-price'>$ {product.price}</span>
           <button className='best-btn'>
             <HiOutlineShoppingBag className='best-icon' />
             Add To Cart</button>
         </div>
       </div>
-      <div className="best-cards">
-        <img src={img} alt="" className='best-img' />
-        <div className="best-content">
-          <h4 className='best-head'>Green Cabbage</h4>
-          <p>vegetable</p>
-          <span className='best-price'>$ 4.32</span>
-          <button className='best-btn'>
-            <HiOutlineShoppingBag className='best-icon' />
-            Add To Cart</button>
-        </div>
-      </div>
-      <div className="best-cards">
-        <img src={img} alt="" className='best-img' />
-        <div className="best-content">
-          <h4 className='best-head'>Green Cabbage</h4>
-          <p>vegetable</p>
-          <span className='best-price'>$ 4.32</span>
-          <button className='best-btn'>
-            <HiOutlineShoppingBag className='best-icon' />
-            Add To Cart</button>
-        </div>
-      </div>
-      <div className="best-cards">
-        <img src={img} alt="" className='best-img' />
-        <div className="best-content">
-          <h4 className='best-head'>Green Cabbage</h4>
-          <p>vegetable</p>
-          <span className='best-price'>$ 4.32</span>
-          <button className='best-btn'>
-            <HiOutlineShoppingBag className='best-icon' />
-            Add To Cart</button>
-        </div>
-      </div>
-      
-     
-      
+        ))
+      }
       
     </div>
 
