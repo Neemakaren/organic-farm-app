@@ -7,13 +7,12 @@ const Brands = () => {
   return (
     <div className='brands-con'>
         {
-            brands.map((brand) => (
-                <div className="brands-image">
+            brands.map((brand, idx) => (
+                <div className="brands-image" key={idx}>
                     <img src={brand.image} alt='' className='brands-img'/> 
                 </div>
             ))
         }
-        <img src="" alt="" />
     </div>
   )
 }

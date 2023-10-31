@@ -11,7 +11,7 @@ const products = [
         title: 'product-2',
         image: './images/p3.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'vegetable'
     },
     {
         id: "3",
@@ -25,14 +25,14 @@ const products = [
         title: 'product-4',
         image: './images/p7.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'spice'
     },
     {
         id: "5",
         title: 'product-5',
         image: './images/p8.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'spice'
     },
     {
         id: "6",
@@ -46,7 +46,7 @@ const products = [
         title: 'product-7',
         image: './images/p3.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'vegetable'
     },
     {
         id: "8",
@@ -60,7 +60,7 @@ const products = [
         title: 'product-9',
         image: './images/p7.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'vegetable'
     },
     {
         id: "10",
@@ -81,7 +81,7 @@ const products = [
         title: 'product-12',
         image: './images/p10.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'spice'
     },
     {
         id: "13",
@@ -95,7 +95,7 @@ const products = [
         title: 'product-12',
         image: './images/p16.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'vegetable'
     }
 ]
 
@@ -118,7 +118,17 @@ const brands = [
     }
 ]
 
+const getProductData = (id) => {
+    let productData = products.find(product =>product.id === id);
+
+    if(productData == undefined) {
+        console.log('product data does not exist for ID' + id)
+        return undefined
+    }
+    return productData
+}
 
 
 
-export  { products, brands } ;
+
+export  { products, brands, getProductData } ;

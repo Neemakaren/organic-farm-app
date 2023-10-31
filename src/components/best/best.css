@@ -4,41 +4,35 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: rgb(249, 235, 179);
-    padding: 20px;
+    padding: 10px;
    
 }
 
 .best1 span{
     font-weight: 900;
-    font-size: 1.2em;
-    color: black;
+    color: #c59d5f;
     
 }
 
-.best1-p {
-    color: gray;
-    font-size: 1.2em;
-}
-
 .best-con {
+    border: 2px solid rgb(242, 238, 238);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-    max-width: 1120px;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    max-width: 80rem;
     margin: 50px auto;
-    gap: 2em;
+   
+    
 }
 
-
-.best-content {
+.best-cards {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 0 2px;
 }
 
 .best-img {
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 10em;
     object-fit: cover;
     transition: all .2s ease-in-out;
 }
@@ -46,23 +40,18 @@
 .best-img:hover {
     transform: scale(1.1);
     overflow: hidden;
-}
+} 
 
-.best-head {
-    font-weight: bold;
-    font-size: 1.4em;
-    padding-bottom: 5px;
-
-}
-
-.best-price {
-    font-weight: bold;
-    font-size: 1.2em;
-    padding-top: 5px;
+.best-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
 }
 
 .best-btn {
-    margin: 8px;
+    margin: 10px;
     padding: 10px;
     border-radius: 40px;
     background-color: white;
@@ -70,15 +59,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(252,219,90);
+    border: .5px solid rgb(252,219,90);
 }
 
 .best-btn:hover {
-    background-color: rgb(252,219,90);
-    color: black;
+    color: rgb(252,219,90);
 }
 
-.best-icon {
-    margin-right: 5px;
-    font-size: 1.5em;
+ .underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: #c59d5f;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: .9em;
 }
+
+ 

@@ -8,6 +8,7 @@ const AboutUs = () => {
       <div className="con-1">
         <div className="about-content">
             <h3 className='about-head'><span>ABOUT AGRO</span> <br /> FARM COMPANY</h3>
+            <div className="underline-1"></div>
         </div>
         <img src={img} alt="" className='about-img' />
         <div className="about-main">

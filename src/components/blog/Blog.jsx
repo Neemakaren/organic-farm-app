@@ -9,6 +9,7 @@ const Blog = () => {
     <>
     <div className="blog-head">
     <h2 className='blog-head-h2'> <span>Blog</span> Posts</h2>
+    <div className="underline"></div>
     <p className='blog-head-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eum.</p>
 
     </div>

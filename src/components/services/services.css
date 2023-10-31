@@ -2,7 +2,6 @@
     max-width: 1120px;
     margin: 50px auto;
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr)); */
     grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
     gap: 20px;
     padding: 40px;
@@ -15,8 +14,6 @@
     align-items: center;
     justify-content: center;
     border-right: 2px solid rgb(242, 238, 238);
-
-
 }
 
 .con-img {

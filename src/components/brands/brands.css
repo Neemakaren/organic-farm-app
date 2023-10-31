@@ -1,14 +1,21 @@
 .brands-con {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 90px;
+    padding-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    max-width: 1120px;
+    margin: 50px auto;
+    gap: 1em;
 }
 
 .brands-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     /* border: 2px solid green; */
 }
 
 .brands-img {
-    padding-right: 2em;
+    /* border: 2px solid black;    */
+
 }

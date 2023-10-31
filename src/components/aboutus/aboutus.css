@@ -1,3 +1,7 @@
+.underline-1 {
+   display: none;
+}
+
 .about-con {
     max-width: 1120px;
     background-image: url('../../assets/agro.png');
@@ -41,10 +45,21 @@
 @media all and  (max-width: 768px) {
     .about-con {
         background-image: none;
-        background-color: rgb(252,219,90);
+        border: 2px solid #c59d5f;
     }
     .about-img {
         display: none;
-
+    }
+    .about-head {
+        padding-bottom: 2px;
+    }
+    .underline-1 {
+        display: block;
+        width: 5rem;
+        height: 0.25rem;
+        background: #c59d5f;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-bottom: 2.5em;
     }
 }

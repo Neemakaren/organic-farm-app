@@ -1,26 +1,35 @@
-import React from 'react'
 import './featured.css'
 import img from '../../assets/feat-1.jpg'
-import { HiOutlineShoppingBag} from 'react-icons/hi'
-import { products } from '../../products'
+import { HiOutlineShoppingBag} from 'react-icons/hi';
+import { CartContext } from '../../CartContext';
+import { useContext } from 'react';
 
 
 
-const Featured = () => {
+
+const Featured = ({products}) => {
+  const cart = useContext(CartContext)
+  const productQuantity = cart.getProductQuantity(products.id)
+  // console.log(cart.items)
+  
+ 
   return (
     <>
-      <h2 className='feat-h2'>Featured Products</h2>
+      <h2 className='feat-h2'> <span>Featured</span>  Products</h2>
+      <div className="underline"></div>
     <div className='featured-con'>
       {
-        products.map((product) => (
-          <div className="featured-cards">
+        products.map((product, idx) => (
+          <div className="featured-cards" key={idx}>
         <img src={product.image} alt="" className='feat-img' />
         <div className="feat-content">
           <h4 className='feat-head'>{product.title}</h4>
           <p>vegetable</p>
           <span className='feat-price'>$ {product.price}</span>
-          <button className='feat-btn'>
-            <HiOutlineShoppingBag className='feat-icon' />
+          <button className='feat-btn'
+          onClick={() => cart.addOneToCart(product.id)}
+          >
+            <HiOutlineShoppingBag  />
             Add To Cart</button>
         </div>
       </div>

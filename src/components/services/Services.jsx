@@ -1,4 +1,3 @@
-import React from 'react'
 import './services.css'
 import img from '../../assets/ship.svg'
 import img1 from '../../assets/discount.svg'

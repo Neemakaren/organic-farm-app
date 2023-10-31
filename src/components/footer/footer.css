@@ -62,3 +62,15 @@
 .sec4-icons:hover > * {
     color: rgb(252,219,90);
 }
+
+@media all and  (max-width: 768px) {
+    .footer-con {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer-sec2 {
+        display: block;
+    }
+}
