@@ -15,6 +15,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
     const toggleLinks = () => {
         setShowLinks(!showLinks)
+        console.log('clicked')
     }
 
   const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0)
@@ -28,9 +29,7 @@ const Navbar = () => {
       <div className="nav-content">
           <ul className='list-main'>
             <li className='list1' >Home</li>
-            <li className='list1'>Pages</li>
-            <li className='list1'>shop</li>
-            <li className='list1'>blog</li>
+            <Link to='/blog' className='list1'>blog</Link>
             <li className='list1'>Contact</li>
           </ul>
           <div className="fonts">
@@ -41,7 +40,7 @@ const Navbar = () => {
             </Link>
           </div>
         <button className="nav-toggle" onClick={toggleLinks}>
-                {/* <FaBars/> */}
+                <FaBars/>
             </button>
       </div>
     </div>
