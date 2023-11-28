@@ -1,101 +1,101 @@
 const products = [
     {
         id: "1",
-        title: 'product-1',
+        title: 'maize',
         image: './images/p2.jpg',
         price: 4.99,
         category: 'fruit'
     },
     {
         id: "2",
-        title: 'product-2',
+        title: 'Tomatoes',
         image: './images/p3.jpg',
         price: 4.99,
         category: 'vegetable'
     },
     {
         id: "3",
-        title: 'product-3',
+        title: 'zuccinni',
         image: './images/p4.jpg',
         price: 4.99,
-        category: 'fruit'
+        category: 'vegetable'
     },
     {
         id: "4",
-        title: 'product-4',
+        title: 'Apples',
         image: './images/p7.jpg',
-        price: 4.99,
-        category: 'spice'
-    },
-    {
-        id: "5",
-        title: 'product-5',
-        image: './images/p8.jpg',
-        price: 4.99,
-        category: 'spice'
-    },
-    {
-        id: "6",
-        title: 'product-6',
-        image: './images/p9.jpg',
         price: 4.99,
         category: 'fruit'
     },
     {
+        id: "5",
+        title: 'Okra',
+        image: './images/p8.jpg',
+        price: 4.99,
+        category: 'vegetable'
+    },
+    {
+        id: "6",
+        title: 'Carrots',
+        image: './images/p9.jpg',
+        price: 4.99,
+        category: 'vegetable'
+    },
+    {
         id: "7",
-        title: 'product-7',
+        title: 'brocolli',
         image: './images/p3.jpg',
         price: 4.99,
         category: 'vegetable'
     },
     {
         id: "8",
-        title: 'product-8',
+        title: 'Cauliflower',
         image: './images/p4.jpg',
         price: 4.99,
         category: 'fruit'
     },
     {
         id: "9",
-        title: 'product-9',
+        title: 'Dates',
         image: './images/p7.jpg',
         price: 4.99,
         category: 'vegetable'
     },
     {
         id: "10",
-        title: 'product10',
+        title: 'Oats',
         image: './images/p8.jpg',
         price: 4.99,
         category: 'fruit'
     },
     {
         id: "11",
-        title: 'product-11',
+        title: 'Grain',
         image: './images/p9.jpg',
         price: 4.99,
         category: 'fruit'
     },
     {
         id: "12",
-        title: 'product-12',
+        title: 'Bell Pepper',
         image: './images/p10.jpg',
         price: 4.99,
-        category: 'spice'
+        category: 'vegetable'
     },
     {
         id: "13",
-        title: 'product-12',
+        title: 'Strawberries',
         image: './images/p11.jpg',
         price: 4.99,
         category: 'fruit'
     },
     {
         id: "14",
-        title: 'product-12',
+        title: 'Grapes',
         image: './images/p16.jpg',
         price: 4.99,
-        category: 'vegetable'
+        category: 'fruit'
     }
 ]
 

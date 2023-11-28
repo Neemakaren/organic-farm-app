@@ -10,7 +10,6 @@ import { useContext } from 'react';
 const Featured = ({products}) => {
   const cart = useContext(CartContext)
   const productQuantity = cart.getProductQuantity(products.id)
-  // console.log(cart.items)
   
  
   return (
@@ -24,7 +23,7 @@ const Featured = ({products}) => {
         <img src={product.image} alt="" className='feat-img' />
         <div className="feat-content">
           <h4 className='feat-head'>{product.title}</h4>
-          <p>vegetable</p>
+          <p>{product.category}</p>
           <span className='feat-price'>$ {product.price}</span>
           <button className='feat-btn'
           onClick={() => cart.addOneToCart(product.id)}

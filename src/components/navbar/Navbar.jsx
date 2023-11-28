@@ -1,23 +1,24 @@
-import { useContext, useState } from 'react'
+import { useContext, useRef} from 'react'
 import './navbar.css';
 import MiniNav from '../mini-nav/Mini-nav';
 import img from '../../assets/default-logo.png'
 import { Link } from 'react-router-dom';
 import { HiOutlineShoppingBag} from 'react-icons/hi';
 import { CartContext } from '../../CartContext';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 const Navbar = () => {
   const cart = useContext(CartContext);
+   
+  const navRef = useRef();
 
-
-  const [showLinks, setShowLinks] = useState(false);
-    const toggleLinks = () => {
-        setShowLinks(!showLinks)
-        console.log('clicked')
-    }
-
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+  
   const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0)
   return (
     <>
@@ -26,11 +27,11 @@ const Navbar = () => {
       <div className="logo-cont">
        <img src={img} alt="" className='logo' />
       </div>
-      <div className="nav-content">
+      <div className="nav-content" ref={navRef}>
           <ul className='list-main'>
-            <li className='list1' >Home</li>
+            <Link to='/' className='list1' >Home</Link>
             <Link to='/blog' className='list1'>blog</Link>
-            <li className='list1'>Contact</li>
+            <Link to='/contact' className='list1'>Contact</Link>
           </ul>
           <div className="fonts">
             <Link to='/cart'>
@@ -39,10 +40,17 @@ const Navbar = () => {
                 ({productsCount})</p>
             </Link>
           </div>
-        <button className="nav-toggle" onClick={toggleLinks}>
-                <FaBars/>
+        <button className="nav-toggle nav-close-btn"
+          onClick={showNavbar}
+        >
+                <FaTimes />
             </button>
       </div>
+        <button className="nav-toggle"
+          onClick={showNavbar}
+        >
+                <FaBars />
+            </button>
     </div>
     </>
   )

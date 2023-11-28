@@ -12,16 +12,20 @@ const CartProduct = (props) => {
 
   return (
     <>
+    <div className="cart">
     <div className="cart-con">
         <img src={productData.image} alt=""  className='cart-img'/>
         <div className="cart-content">
         <h3>{productData.title}</h3>
-        <p>{quantity} total</p>
-        <p>$ {(quantity * productData.price).toFixed(2) }</p>
-        <button onClick={() => cart.deleteFromCart(id)}>Remove</button>
-        <button onClick={() => cart.addOneToCart(productData.id)}>+</button>
-        <button onClick={() => cart.removeOneFromCart(productData.id)}>-</button>
+        <div className='tgth'>
+        <button onClick={() => cart.addOneToCart(productData.id)} className='cart-btn'>+</button>
+        <p className='total-btn'>{quantity} total</p>
+        <button onClick={() => cart.removeOneFromCart(productData.id)} className='cart-btn'>-</button>
         </div>
+        <p>$ {(quantity * productData.price).toFixed(2) }</p>
+        <button onClick={() => cart.deleteFromCart(id)} className='remove-btn'>Remove</button>
+        </div>
+    </div>
     </div>
     </>
   )

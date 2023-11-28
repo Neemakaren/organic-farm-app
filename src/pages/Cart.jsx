@@ -1,6 +1,7 @@
 import { useContext} from 'react'
 import { CartContext } from '../CartContext';
 import CartProduct from '../components/CartProduct';
+import { Link } from 'react-router-dom';
 const Cart = () => {
   const cart = useContext(CartContext)
   const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0);
@@ -18,11 +19,17 @@ const Cart = () => {
             </>
           ))
         }
-        <h1>Total:{cart.getTotalCost().toFixed(2)} </h1>
+        <h1 className='total-btn'>Total:{cart.getTotalCost().toFixed(2)} </h1>
         </>
         :
         <h1 className='cart-head'>there are no items in your cart</h1>
       }
+     <Link to='/'className='blog-btn'>
+  
+  <button >Back Shopping</button>
+
+  </Link>
+
 
     </section>
   )

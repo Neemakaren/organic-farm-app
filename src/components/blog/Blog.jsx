@@ -19,9 +19,6 @@ const Blog = () => {
         <div className="blog-content">
             <span>DIET / TIPS & GUIDES</span>
             <h3>Tips for Ripening your Fruit</h3>
-            <p>The generated Lorem Ipsum is therefore always 
-                free from repetition injected humour, or 
-                non-characteristic words etc.</p>
         </div>
 
         </div>
@@ -30,8 +27,6 @@ const Blog = () => {
         <div className="blog-content">
             <span>HEALTH BENEFITS OF RAW FOOD</span>
             <h3>Tips for Ripening your Fruit</h3>
-            <p>The generated Lorem Ipsum is therefore always 
-                free from repetition injected humour, or non-characteristic words etc.</p>
         </div>
 
         </div>
@@ -40,9 +35,6 @@ const Blog = () => {
         <div className="blog-content">
             <span>SUPERFOODS YOU SHOULD BE EATING</span>
             <h3>Tips for Ripening your Fruit</h3>
-            <p>The generated Lorem Ipsum is therefore always 
-                free from repetition injected humour, or 
-                non-characteristic words etc.</p>
         </div>
 
         </div>

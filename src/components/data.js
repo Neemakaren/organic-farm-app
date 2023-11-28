@@ -5,7 +5,7 @@ import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export const PRODUCTS = [
   {
     id: 1,
-    productName: "product One",
+    productName: "maize",
     price: 999.0,
     image: './product-1.png',
   },
@@ -59,7 +59,7 @@ export const PRODUCTS = [
   },
   {
     id: 10,
-    productName: "product ten",
+    productName: "Okra",
     price: 40.0,
     image: './product-3.png'
   },

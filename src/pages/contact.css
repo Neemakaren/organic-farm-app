@@ -1,0 +1,13 @@
+.contact-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    padding: 5em;
+}
+
+.icon {
+    font-size: 3em;
+    padding-bottom: 10px;
+}
